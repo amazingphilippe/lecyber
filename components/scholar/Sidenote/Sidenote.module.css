@@ -7,6 +7,18 @@
   vertical-align: baseline;
 }
 
+.label {
+  border: 0px none;
+  clip: rect(0px, 0px, 0px, 0px);
+  height: 1px;
+  width: 1px;
+  margin-bottom: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+}
+
 .sidenote {
   float: right;
   clear: right;
@@ -17,15 +29,7 @@
   width: 50%;
 }
 .control {
-  border: 0px none;
-  clip: rect(0px, 0px, 0px, 0px);
-  height: 1px;
-  width: 1px;
-  margin-bottom: -1px;
-  padding: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  position: absolute;
+  display: none;
 }
 
 @media (pointer: coarse) and (max-width: 48em) {
@@ -63,9 +67,6 @@
     position: relative;
   }
 
-  .control:focus {
-    box-shadow: 0 0 0 -3px var(--accent-dark);
-  }
   .number + .sidenote {
     display: none;
   }

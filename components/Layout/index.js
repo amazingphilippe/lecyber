@@ -40,7 +40,7 @@ export const Layout = ({ children }) => {
               gap={0}
               w="100%"
             >
-              <GridItem as="dt" borderBottom="1px">
+              <GridItem colSpan={{ base: 3, md: 1 }} as="dt" borderBottom="1px">
                 {key}
               </GridItem>
               <GridItem as="dd" colSpan={4} borderBottom="1px">

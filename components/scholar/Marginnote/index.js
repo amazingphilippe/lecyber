@@ -8,8 +8,6 @@ import styles from "./Marginnote.module.css";
 export const Marginnote = (props) => {
   return (
     <p>
-      <chakra.label htmlFor={`${props.id}-toggle`} d="none" />
-      <chakra.input id={`${props.id}-toggle`} type="checkbox" d="none" />
       <chakra.span
         id={props.id}
         className={styles.marginnote}

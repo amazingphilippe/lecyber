@@ -22,7 +22,7 @@ export const Header = ({ site, nav }) => {
           {site.title}
         </Heading>
       </GridItem>
-      <GridItem as="ul" colSpan={1} m={0}>
+      <GridItem as="ul" colSpan={{ base: 3, md: 2, lg: 1 }} m={0}>
         <chakra.li color="accent.dark">
           <chakra.a href={site.author_url} className={FunkyLink.funkyLink}>
             {site.author}
@@ -33,7 +33,7 @@ export const Header = ({ site, nav }) => {
         <chakra.li>{site.publication}</chakra.li>
       </GridItem>
 
-      <GridItem as="ul" colSpan={2} m={0}>
+      <GridItem as="ul" colSpan={{ base: 4, lg: 2 }} m={0}>
         {nav.map((item, index) => (
           <chakra.li key={index} color="accent.dark">
             <chakra.a href={item.href} className={FunkyLink.funkyLink}>
