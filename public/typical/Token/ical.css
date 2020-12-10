@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Token";
+  font-style: normal;
+  font-weight: normal;
+  src: url("type/Token5-Regular.woff2") format("woff2"),
+    url("type/Token5-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Token";
+  font-style: italic;
+  font-weight: normal;
+  src: url("type/Token5-Italic.woff2") format("woff2"),
+    url("type/Token5-Italic.woff") format("woff");
+}

@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "TokenSans";
+  font-style: normal;
+  font-weight: 300; /* light */
+  src: url("type/TokenSans5-Light.woff2") format("woff2"),
+    url("type/TokenSans5-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "TokenSans";
+  font-style: normal;
+  font-weight: 400; /* normal */
+  src: url("type/TokenSans5-Regular.woff2") format("woff2"),
+    url("type/TokenSans5-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "TokenSans";
+  font-style: normal;
+  font-weight: 500; /* medium */
+  src: url("type/TokenSans5-Medium.woff2") format("woff2"),
+    url("type/TokenSans5-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "TokenSans";
+  font-style: normal;
+  font-weight: 700; /* bold */
+  src: url("type/TokenSans5-Bold.woff2") format("woff2"),
+    url("type/TokenSans5-Bold.woff") format("woff");
+}

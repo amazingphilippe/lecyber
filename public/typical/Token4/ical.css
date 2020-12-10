@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Token4";
+  font-style: normal;
+  font-weight: normal;
+  src: url("type/Token4-Green.woff2") format("woff2"),
+    url("type/Token4-Green.woff") format("woff");
+}
+@font-face {
+  font-family: "Token4";
+  font-style: italic;
+  font-weight: normal;
+  src: url("type/Token4-Yellow.woff2") format("woff2"),
+    url("type/Token4-Yellow.woff") format("woff");
+}

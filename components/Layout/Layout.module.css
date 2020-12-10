@@ -1,0 +1,36 @@
+.footer a {
+  box-shadow: none;
+  display: flex;
+}
+
+.footer a {
+  display: flex;
+  box-shadow: 0 1px var(--accent-dark);
+}
+
+.footer a:hover,
+.footer a:focus {
+  background: var(--black);
+}
+
+.footer a:hover:after,
+.footer a:focus:after {
+  background-image: repeating-radial-gradient(
+    var(--white),
+    var(--white) 2px,
+    var(--accent-dark) 2px,
+    var(--accent-dark) 3px
+  );
+}
+
+.footer a:after {
+  content: "";
+  flex-grow: 1;
+  margin-left: 0.5rem;
+  background-attachment: fixed;
+}
+
+.footer dd {
+  border-bottom: 1px solid;
+  border-color: currentColor;
+}

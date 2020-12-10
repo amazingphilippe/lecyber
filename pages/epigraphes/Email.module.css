@@ -1,0 +1,33 @@
+.email {
+  border: 1px solid black;
+  position: relative;
+}
+
+.email:before {
+  content: "";
+  border: 1px solid black;
+  height: 2ex;
+  width: 80%;
+  top: -2ex;
+  left: -1px;
+  position: absolute;
+  background-image: repeating-radial-gradient(
+    transparent,
+    transparent 2px,
+    currentColor 2px,
+    currentColor 3px
+  );
+  background-attachment: fixed;
+}
+
+.email > * + * {
+  border-top: 1px solid black;
+}
+
+.email > div span {
+  padding: 0.25rem 1rem;
+}
+
+.email > div span + span {
+  border-left: 1px solid black;
+}

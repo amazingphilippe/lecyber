@@ -1,0 +1,18 @@
+.bibItem {
+  text-indent: -2rem;
+  padding-inline-start: 2rem;
+  display: flex;
+  position: relative;
+}
+
+.bibItem:target:after {
+  content: "<<<<";
+  margin-inline-start: 2rem;
+  font-size: 3rem;
+  position: absolute;
+  left: 100%;
+  color: var(--accent-dark);
+}
+.bibItem:target {
+  box-shadow: 0 0 0 1px var(--accent-dark);
+}

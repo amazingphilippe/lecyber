@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "TokenMono";
+  font-style: normal;
+  font-weight: 300; /* light */
+  src: url("type/TokenMono5-Light.woff2") format("woff2"),
+    url("type/TokenMono5-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "TokenMono";
+  font-style: normal;
+  font-weight: 700; /* bold */
+  src: url("type/TokenMono5-Bold.woff2") format("woff2"),
+    url("type/TokenMono5-Bold.woff") format("woff");
+}

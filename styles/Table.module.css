@@ -1,0 +1,80 @@
+.table {
+  width: 60ch;
+  font-size: 1.125rem;
+  margin: 0;
+  border-spacing: 0px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  max-width: 100%;
+}
+
+.table th {
+  border-bottom: 1px solid black;
+  padding: 0.65ex 0 0.4ex 0;
+  font-weight: normal;
+  text-align: left;
+  vertical-align: baseline;
+  border-bottom: 1px solid black;
+  position: sticky;
+  top: 0;
+}
+
+.table tr:first-child td {
+  padding-top: 0.65ex;
+}
+
+.table td {
+  font-size: 1rem;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 2ex;
+  text-align: left;
+  vertical-align: baseline;
+  padding-right: 1rem;
+}
+
+.table td > * + * {
+  margin-block-end: 0.5rem;
+}
+
+.table td:empty {
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 2px,
+    var(--accent-light) 2px,
+    var(--accent-light) 3px
+  );
+  background-attachment: fixed;
+}
+
+.tableWrapper[tabindex="0"][aria-labelledby][role="region"] {
+  width: 100%;
+  margin: 0;
+  margin-top: 1rem;
+  padding: 0;
+  overflow: auto;
+  background: linear-gradient(
+      to right,
+      var(--white) 30%,
+      rgba(255, 255, 255, 0) 0
+    ),
+    linear-gradient(to right, rgba(255, 255, 255, 0), var(--white) 70%) 0 100%,
+    repeating-linear-gradient(
+      var(--white),
+      var(--white) 2px,
+      var(--black) 2px,
+      var(--black) 3px
+    ),
+    repeating-linear-gradient(
+      var(--white),
+      var(--white) 2px,
+      var(--black) 2px,
+      var(--black) 3px
+    );
+  background-repeat: no-repeat;
+  background-color: var(--white);
+  background-size: 40px 100%, 40px 100%, 12px 100%, 12px 100%;
+  background-position: 0 0, 100%, 0 0, 100%;
+  background-attachment: local, local, scroll, scroll;
+}

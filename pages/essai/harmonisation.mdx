@@ -1,0 +1,667 @@
+import { Citation as Cite } from "../../components/scholar/Cite";
+import { Sidenote } from "../../components/scholar/Sidenote";
+import { Marginnote } from "../../components/scholar/Marginnote";
+import { Essai } from "../../layouts/Essai";
+import { chakra } from "@chakra-ui/react";
+import styles from "../../styles/Table.module.css";
+
+export default ({ children }) => <Essai>{children}</Essai>;
+
+# Harmonisation des processus de la muséalisation
+
+Pour Mairesse, la muséalisation est l’opération qui tend à « extraire,
+physiquement et conceptuellement, une chose de son milieu naturel ou culturel
+d’origine et à lui donner un statut muséal, à la transformer en [...] objet de
+musée » <Cite id="mairesse_musealisation_2011" locator={334}/>. L’objet de musée est
+prélevé de son contexte. Le contexte primaire, celui de la conception et de
+l’utilisation de l’objet, est défini par le cycle de vie utile de l’objet. Le
+contexte secondaire, celui de l’objet qui est déchet, appartient à l’éboueur
+puis aux archéologues. Le troisième contexte, celui de l’objet de musée, qui est
+initialement prélevé à partir d’un des deux premiers contextes, appartient au
+musée. À la suite de ce prélèvement, l’opération de la muséalisation s’effectue
+en trois phases, celle de la sélection, celle de la recherche
+(thésaurisation<Sidenote id="28">Mairesse <Cite id="mairesse_musealisation_2011" locator={334} suppressAuthor/> reprend le modèle de
+muséalisation développé par Stránský (sélection, thésaurisation, présentation)
+qui nuance l’expression _objet de musée_ et _objet dans un musée_. C’est
+justement par la muséalisation que l’objet de musée obtient plusieurs statuts.
+La thésaurisation est ici associée à la recherche, par laquelle les objets de
+collections sont notamment mis en relation par une opération de
+classification.</Sidenote>) et celle de la présentation (_Ibid_.). Le
+processus de muséalisation se distingue, en termes de contexte, de la collection
+privée. Le musée se rattache au domaine scientifique et ses collections sont
+institutionnalisées. L’objet doit d’abord être choisi pour sa valeur de
+témoignage (_témoignalité_) et d’enseignement (_documentalité_) (_Ibid_.). Il
+est difficile de cerner l’objectivité de l’opération de la collection, puisque
+celle-ci « se fonde sur un réseau complexe de motivations, de pulsions et de
+désirs plus ou moins avouables » (_Ibid_., p. 344). Elle n’est ainsi jamais
+parfaitement objective (_Ibid_.). Le résultat de la muséalisation est celui de
+l’objet muséalisé, soit de l’objet documenté, portant une identité structurelle,
+fonctionnelle et contextuelle.
+
+Pour Julien et Rosselin, la muséalisation permet trois statuts octroyés
+successivement à l’objet, qui devient ainsi muséal. Le premier statut,
+juridique, vient du fait que l’objet a été sélectionné en fonction de sa valeur
+patrimoniale, esthétique ou financière. Celui-ci provient du domaine de l’usuel,
+de l’ancien ou de l’humain. L’objet doit aussi être en adéquation avec la
+mission du musée qu’il intègre. Par son intégration au sein des collections d’un
+musée, l’objet est juridiquement protégé en vertu des politiques de
+collectionnement de l’institution. Le deuxième statut, scientifique, est induit
+par la classification de l’objet et par le travail de recherche qui est effectué
+à son sujet afin d’élaborer des savoirs. Une étape de restauration de l’objet
+peut aussi être considérée, tant pour sa préservation que pour son troisième
+statut en devenir, le statut social. Celui-ci est amené par la monstration
+publique de l’objet, voire par son exposition, et repose notamment sur des
+qualités esthétiques, qui s’ajoutent aux dimensions juridique et scientifique
+acquises par celui-ci<Sidenote id="29">« Ce qui détermine l’acquisition et le
+travail scientifique se trouve ainsi relégué au second plan, sinon gommé des
+considérations qui définissent l’objet montrable. » <Cite id="julien_culture_2005" locator={41} />. Il faut noter que les auteures
+s’intéressent aux musées d’ethnographie française et aux musées
+révolutionnaires, apparus après la révolution pour préserver le patrimoine
+français. Ce processus de muséalisation spécifique est spécifique à ce contexte.</Sidenote>.
+
+<Marginnote id="tableau-harmonisation-simple">
+  Tableau : Tableau comparatif du processus de muséalisation selon Julien et
+  Rosselin (2005) dans _La culture matérielle_ et Mairesse (2011) dans _Le
+  dictionnaire encyclopédique de muséologie._
+</Marginnote>
+
+<div
+  role="region"
+  aria-labelledby="tableau-harmonisation-simple"
+  tabIndex="0"
+  className={styles.tableWrapper}
+>
+  <table className={styles.table}>
+    <thead>
+      <tr>
+        <th>Processus de muséalisation</th>
+        <th>Julien et Rosselin (2005)</th>
+        <th>Mairesse (2011)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Contexte initial de l’objet</td>
+        <td>Usuel, ancien, humain</td>
+        <td>
+          Contexte primaire : la conception de l’objet Contexte secondaire : le
+          déchet Contexte troisième : la préservation
+        </td>
+      </tr>
+      <tr>
+        <td>Critères de sélection</td>
+        <td>Objet-témoin, doit être représentatif</td>
+        <td>Témoignalité, documentalité</td>
+      </tr>
+      <tr>
+        <td>Sélection</td>
+        <td>Isolation Obtention d’un statut juridique</td>
+        <td>
+          Sélection, acquisition, gestion Identifier les porteurs potentiels de
+          la muséalité
+        </td>
+      </tr>
+      <tr>
+        <td>Recherche (Thésaurisation)</td>
+        <td>Classification,restauration Obtention d’un statut scientifique</td>
+        <td>
+          Préservation, conservation, catalogage Former le thésaurus de la
+          collection et les conditions de préservation
+        </td>
+      </tr>
+      <tr>
+        <td>Présentation</td>
+        <td>Présentation Obtention d’un statut social et esthétique</td>
+        <td>
+          Exposition, publication Rétroaction de la réalité muséalisée vers la
+          conscience sociale
+        </td>
+      </tr>
+      <tr>
+        <td>Information muséalisée</td>
+        <td>Objet inaliénable</td>
+        <td>
+          Objet documenté : identité structurelle, fonctionnelle ou
+          contextuelle.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+## Sélection, recherche et présentation
+
+Les différents processus de muséalisation revus dans ce rapport, notamment ceux
+de Mairesse (2011) et de Julien et Rosselin (2005) peuvent servir de guide pour
+l’étude d’un processus de muséalisation adapté à la cyberœuvre. Toutefois, en ce
+qui a trait à l’objectivité et à la subjectivité du processus de muséalisation
+du cyberart, ces deux textes sont moins utiles. Plus spécifiquement, il faut se
+référer au texte de Heather Slania (2013) qui explique comment une archive de
+cyberœuvre peut être créée et préservée. Encore, le texte de Rinehart (2002) à
+propos de l’_Artbase_ du _Rhizome_ peut venir informer l’harmonisation des
+processus de la muséalisation pour ce qui relève des modèles de classification
+adaptés à la cyberœuvre.
+
+Bien que traités indirectement par Rinehart (2002), Laforet (2004) et Slania
+(2013), les facteurs d’objectivité et de subjectivité dans le cadre de la
+sélection de cyberœuvres mériteraient d’être mieux définis. De façon générale,
+la sélection de la cyberœuvre se fait selon des principes établis de
+l’institution muséale qui opère celle-ci. Ainsi, le critère d’objectivité peut
+être variable selon les institutions. Selon Bergeron (2011), le processus de
+sélection s’opère en deux étapes, celle de la reconnaissance et celle de
+l’appropriation. La première, la reconnaissance, s’accorde parfaitement avec le
+passage au statut juridique de Julien et Rosselin (2005), en ce sens que l’on
+reconnait un nouveau statut à l’objet muséologique, plus spécifiquement à
+l’œuvre d’art, car celle-ci n’est pas initialement muséale. Elle le devient
+lorsqu’elle acquiert de la valeur par le système de reconnaissance que
+constituent les galeries, les critiques d’art et les collectionneurs <Cite id="desvallees_objet_2011" />.
+
+En ce qui a trait à la recherche, il est important d’identifier trois grandes
+catégories d’activités : la documentation et l’identification ; la recherche et
+le développement relatifs à la conservation et la préservation ; ainsi que la
+réflexion muséologique et la recherche scientifique à propos l’institution
+muséale comme objet d’étude. <Cite id="desvallees_objet_2011" locator={530}/>. Les deux
+premières sont directement en rapport avec les fonctions et les opérations
+muséales menant à la mise en valeur des collections. La troisième a pour but de
+mener une réflexion sur cesdites opérations. Elle est directement en lien avec
+une valorisation de l’objet que Pomian associe à la finalité et la raison d’être
+des collections, soit celle d’être exposées au regard <Cite id="pomian_collectionneurs_1987" locator={18}/>. Comme nous l’avons indiqué plus
+haut, Mairesse (2011) s’inspire, entres autres, du processus de muséalisation de
+Stránský. Dans l’énoncé de ce projet de recherche, il est plutôt question de
+_recherche_ et non de _thésaurisation_. Pour Mairesse, le terme thésaurisation
+renvoie au terme de recherche au sens de catalogage. Il faut aller emprunter la
+définition d’André Gob, dans _Le jardin des Viard ou les valeurs de la
+muséalisation,_ pour saisir que la recherche renvoie aussi à tout ce qui a trait
+à la documentation et à l’incorporation des objets dans l’activité muséale <Cite id="gob_jardin_2009" locator={8}/>. La documentation sert ainsi à récolter les
+éléments de l’identité de l’objet de musée, en vue de sa mise en exposition,
+concept que Mairesse n’attribue pas tout à fait à l’étape de thésaurisation,
+mais que Gob associe à l’opération de recherche. D’ailleurs, Julien et Rosselin
+(2005) utilisent quant à elles l’adjectif _scientifique_ pour qualifier les
+opérations de restauration et de classification.
+
+Finalement, en ce qui a trait à la présentation, la cyberœuvre obtient un statut
+social et esthétique par son exposition ou sa publication. Les différentes
+stratégies d’exposition, telles qu’abordées dans les différents modèles de
+muséalisation ainsi que dans la littérature, ne permettent pas d’identifier des
+points de friction avec le processus de la muséalisation. Il se trouve que la
+cyberœuvre peut se présenter adéquatement, autant dans l’exposition physique que
+par la cyberexposition. Les deux approches ont certainement chacune leurs
+avantages et inconvénients, notamment en ce qui a trait à l’expérience de
+l’interface de la cyberœuvre. Elle est autant une expérience individuelle <Cite id="cornell_we_2015" /> que collective <Cite id="keene_digital_2001" />.
+Cette expérience est tributaire tant de l’organisation de l’interface <Cite id="lemke_travels_2002" />, que de la structure en arabesque <Cite id="fischer_planete_2004" /> et que de la perception phénoménologique de
+l’écran <Cite id="vial_ontophanie_2013" />. La suite de ce projet de recherche,
+notamment par les entretiens, permet d’établir quelles sont les modalités mises
+en place par les commissaires lors de la présentation de la cyberœuvre.
+
+## Problématiques et pistes de solutions soulevées par les processus de muséalisation en lien avec la cyberœuvre
+
+L’_Artbase_<Sidenote id="30">L’_Artbase_ de Rhizome est le catalogue en ligne des
+collections de l’organisme. </Sidenote> du Rhizome est un répertoire où
+des cyberœuvres sont conservées. Au début de son existence, le processus de
+sélection était absent et toute cyberœuvre soumise était collectionnée. Depuis
+environ 2005, un comité évalue la qualité des soumissions. Pour procéder à une
+sélection appropriée, le comité doit être constitué d’experts en matière de
+cyberart <Cite id="graham_self-collection_2014"/>. En mettant l’emphase sur la cyberœuvre comme
+objet de sa collection, Rhizome procède à une opération de muséalisation. Sa
+collection est formée dans son intégralité d’un index de liens de cyberœuvres et
+d’une portion de celles-ci archivées et stockées par l’institution. Cette
+archive nécessite, entre autres, des activités de conservation et de
+préservation des cyberœuvres. De plus cette collection a souvent servi à la
+conception d’expositions produites par le même organisme. Par exemple, le _Net
+Art Anthology_ de _Rhizome_ met en cyberexposition une sélection majeure de
+cyberœuvres. Celles-ci sont présentées, tant de manière documentaire ou
+fonctionnelle, à la suite d’un travail de documentation, de restauration ou de
+conservation. C’est donc un exemple de muséalisation qui vient répondre à
+l’énoncé de cet essai par la sélection, la recherche et la présentation.
+
+Ce qui semble être décisif pour faire valoir l’importance d’une cyberœuvre à
+l’étape de la sélection, c’est son niveau de reproductibilité. Il y a d’abord la
+reproductibilité technique, comme l’entendait Benjamin, par la création de
+copies pour la distribution de masse<Sidenote id="31">Benjamin parlait de
+reproductibilité mécanique. Dans le cas de la cyberœuvre, la reproductibilité
+numérique est inhérente au médium.</Sidenote>. Mais la cyberœuvre doit
+aussi posséder une qualité de reproductibilité sociale, telle qu’expliquée dans
+Net Aesthetics 2.0 (2015). Elle doit pouvoir être évaluée positivement quant à
+sa résonnance sociale — c’est-à-dire à sa capacité à être visitée, partagée,
+reprise : il s’agit du niveau de conversation qu’elle génère dans le cyberespace
+et dans l’espace physique <Cite id="cornell_net_2015" locator={285}/>.
+
+Cette reproductibilité ainsi entendue est liée aux notions de multiplicité et de
+variation d’une cyberœuvre. Ces notions, voire ces qualités, sont problématiques
+dans un contexte muséal. L’objet de musée possède un statut juridique (Julien &
+Rosselin, 2005) qui s’applique aisément à l’objet unique, mais de manière moins
+évidente à l’objet numériquement reproductible. Par ailleurs, _L’approche des
+nouveaux médias_ propose de faire une distinction entre l’œuvre _reproduite_ et
+l’œuvre _dupliquée_ <Cite id="depocas_lapproche_2003"/>. Cette distinction permet
+faire la différence entre une cyberœuvre qui se présente à l’écran qui a une
+reproductibilité numérique et qui permet une expérience du regardeur, et une
+cyberœuvre qui est altérée par une opération de duplication. La cyberœuvre
+serait alors techniquement mise à jour ou reconstruite pour des fins de
+conservation et d’exposition. On peut s’interroger si, pour l’intégrité de
+l’œuvre dans un contexte de muséalisation, la duplication est plus préjudiciable
+que la reproductibilité.
+
+L’accès numérique aux collections du musée permet un degré de liberté
+appréciable par les publics du musée. Comme le dit Keene, les interactions
+possibles et générées par la nature numérique des collections permettraient un
+niveau de relation différent entre le musée, ses collections et le public <Cite id="keene_digital_2001" locator={86} suppressAuthor/>. Dans le contexte d’un cybermusée, on est en mesure de permettre au
+visiteur d’accéder pratiquement sans restriction à l’objet numérique — dans ce
+cas-ci la cyberœuvre — de techniquement lui permettre de la manipuler, et ce,
+sans risque de détérioration. Par ce contexte de reproductibilité
+hypermédiatique, le public peut « toucher » un objet de musée sans l’altérer, en
+se l’appropriant véritablement.
+
+### Cerner les limites de la cyberœuvre
+
+La nature technologique et numérique de la cyberœuvre est importante à
+considérer. « La plupart des projets artistiques qui sont aujourd’hui faits pour
+le Web ne sont pas uniquement basés sur une collection spécifique d’informations
+verbales ou quantitatives, mais sur un design visuel soigneusement contrôlé ou
+sur un jeu autour du médium qui les encadre. » <Cite id="laforet_net_2004" locator={15} />. Le cyberartiste, lors de la
+création, crée à partir d’un environnement technologique éphémère. Si cet
+environnement devient obsolète, l’apparence de la cyberœuvre s’en trouve
+modifiée. De plus, la délimitation contexte de diffusion d’une cyberœuvre est
+aussi problématique puisque son cadre peut s’étendre, via l’hyperlien, à
+l’extérieur de ses limites. De plus, une cyberœuvre, qui dépend d’un contexte
+externe ou qui est parasitaire, n’est pas autonome.
+
+Cela place, encore une fois, la cyberœuvre en contradiction avec les préceptes
+de la muséalisation. Elle pose problème quant au principe de conservation.
+
+> Pour certains conservateurs et commissaires d’exposition, acquérir et
+> conserver des œuvres dont la matérialité n’est pas stable ne devrait pas être
+> l’objet du musée. [...] les conservateurs ne devraient pas être confrontés à
+> une tâche qu’ils ne peuvent pas raisonnablement réaliser. <Cite id="laforet_net_2004" locator={23} />
+
+Laforet propose trois modèles pour la conservation du cyberart. La première est
+la conservation d’un objet unique<Sidenote id="32">L’objet unique, dans le cas de
+la cyberœuvre, est constitué de celle-ci, mais aussi d’un support informatique
+matériel. Comme objet unique, ces deux choses sont
+inséparables.</Sidenote>, qui sert à mettre l’emphase sur le caractère
+également unique de la cyberœuvre, et qui nécessite une analyse rigoureuse de
+celle-ci. Les résultats de cette analyse rigoureuse permettraient de recréer la
+cyberœuvre si le besoin se présente. La deuxième approche est celle de la
+conservation quantitative. Celle-ci encourage l’accumulation et la mise en
+relation de plusieurs documents récoltés à partir de la
+cyberœuvre<Sidenote id="33">Laforet <Cite id="laforet_net_2004" locator={15} suppressAuthor/> fait allusion ici à des documents
+d’archives, donc des archives web. Ce type de documents est à différencier avec
+la capture d’écran photographique ou vidéo.</Sidenote>. C’est notamment un
+procédé qui s’apparente à l’archive, par l’usage de robots collecteurs ou par la
+collecte de documents accompagnés de métadonnées <Cite id="laforet_net_2004" locator={37} />. La
+troisième approche est un hybride des deux premières. Elle permet à
+l’institution de présenter la nature et le contexte d’origine d’une cyberœuvre,
+devenue technologiquement dysfonctionnelle, par la présentation et la mise en
+contexte de fragments, voire de « morceaux brisés » de celle-ci. Il s’agit de
+les « faire parler ».
+
+> Le musée archéologique, en revanche, apparaît comme un modèle plus pertinent :
+> il mêle culture savante et objets du quotidien ; il conserve des « morceaux
+> brisés » (équivalent d’œuvres qui ne « fonctionnent » plus comme elles le
+> devraient) qu’il sait « faire parler » ; il travaille sur la répétition et
+> l’accumulation d’objets identiques dans divers états qui permettent une
+> reconstitution mentale de l’état ou des états originels. <Cite id="laforet_net_2004" locator={40}/>
+
+### Archéologie du numérique
+
+L’archéologie du numérique peut fournir des pistes de réflexion méthodologiques
+quant à la muséalisation de la cyberœuvre. Parikka nous révèle comment la
+pratique de l’archéologie des médias peut se traduire en un processus créatif.
+En effet, son discours s’appuie sur la répétition et le recyclage du passé
+médiatique comme méthode archéologique. Une telle pratique ne peut pas être
+clairement définie, il s’agit plutôt d’un processus d’itération ou de
+remue-méninge <Cite id="parikka_what_2012" locator={138}/>. Or, cette analyse
+archéologique se rapproche tangiblement de celle des médias variables (approche
+des médias variables - AMV) mise sur pied par la fondation Solomon R. Guggenheim <Cite id="depocas_lapproche_2003" />. Dans cette approche, une très grande
+liberté est autorisée quant à la permanence de l’œuvre, notamment dans le cadre
+de sa conservation et de sa préservation. Cela permet de mettre en perspective
+la problématique relative à muséalisation de la cyberœuvre.
+
+D’autre part, Antoinette Dekker (2014), dans le cadre d’une dissertation sur la
+conservation de la cyberœuvre, compare plusieurs méthodes<Sidenote id="34">Les
+quatre modèles analysés dans la dissertation de Dekker sont les suivants :
+L’approche des médias variables (2003); Capturing Unstable Media Conceptual
+Model (2003); Matters in Media Art (2004); et le Media Art Notation System
+(2005).</Sidenote>, dont l’approche AMV et l’approche _Matters in Media
+Art_ (MMA). L’approche méthodologique MMA, développée par le Museum of Modern
+Art de New York (MOMA), le _New Art Trust_, le San Francisco Museum of Modern
+Art (SFMOMA) et la Tate du Royaume-Uni, permet de faciliter l’acquisition, la
+conservation et la présentation d’une œuvre médiatique. Elle se divise en trois
+étapes : la pré-acquisition (sélection), l’acquisition et la post-acquisition
+(recherche et présentation) (Dekker, 2014, p. 107). L’aspect le plus pertinent,
+relativement à notre objet d’étude, est que cette méthodologie peut s’appliquer
+quasi systématiquement aux étapes des modèles de muséalisation de Julien et
+Rosselin (2005) et de Mairesse (2011).
+
+<Marginnote id="tableau-harmonisation-2">
+  Tableau : Tableau mettant en concordance les processus de muséalisation de
+  Julien et Rosselin (2005) et de Mairesse (2011) avec l’approche MMA (2014).
+</Marginnote>
+
+<div
+  role="region"
+  aria-labelledby="tableau-harmonisation-2"
+  tabIndex="0"
+  className={styles.tableWrapper}
+>
+  <table className={styles.table}>
+    <thead>
+      <tr>
+        <th>Processus de muséalisation</th>
+        <th>Julien et Rosselin (2005)</th>
+        <th>Mairesse (2011)</th>
+        <th>MMA (2004)</th>
+        <th>AMV (2003)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Contexte initial de l’objet</td>
+        <td>Usuel, ancien, humain</td>
+        <td>Contexte primaire, secondaire et troisième</td>
+        <td>
+          <chakra.p
+            fontSize="sm"
+            lineHeight="base"
+            p={2}
+            border="1px"
+            borderColor="accent.light"
+          >
+            Les cases vides symbolisent les étapes qui ne sont pas prises en
+            considération dans le modèle MMA.
+          </chakra.p>
+        </td>
+        <td>
+          <chakra.p
+            fontSize="sm"
+            lineHeight="base"
+            p={2}
+            p={2}
+            border="1px"
+            borderColor="accent.light"
+          >
+            Les cases vides symbolisent les étapes qui ne sont pas prises en
+            considération dans le modèle AMV.
+          </chakra.p>
+        </td>
+      </tr>
+      <tr>
+        <td>Critères de sélection</td>
+        <td>Objet-témoin, doit être représentatif</td>
+        <td>Témoignalité, documentalité</td>
+        <td>
+          Pré-acquisition Rassembler les informations nécessaires. Estimer les
+          besoins financiers et matériels
+        </td>
+        <td>
+          Questionnaire des médias variables : Estimer les besoins financiers et
+          matériels, préparation à la conservation et à la présentation
+        </td>
+      </tr>
+      <tr>
+        <td>Sélection</td>
+        <td>Statut juridique</td>
+        <td>Sélection, acquisition, gestion</td>
+        <td>Acquisition Obtention d’un statut juridique</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Recherche (Thésaurisation)</td>
+        <td>Statut scientifique</td>
+        <td>Préservation, conservation, catalogage</td>
+        <td>
+          Post-acquisition Catalogage, préparation à la conservation et à la
+          présentation de l’œuvre
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Présentation</td>
+        <td>Statut social et esthétique</td>
+        <td>Exposition, publication</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+L’approche MMA se distingue de l’AMV par le fait qu’elle concorde plus
+harmonieusement avec le processus de muséalisation tel qu’envisagé par Julien et
+Rosselin (2005) et Mairesse (2011). L’AMV est davantage une méthodologie qui
+facilite la prise de décision et l’évaluation d’une cyberœuvre avant son
+acquisition. Par exemple, le questionnaire pour les médias
+variables<Sidenote id="37">Le questionnaire pour les médias variables est celui
+de la méthode AMV. Le questionnaire est disponible au
+<http://variablemediaquestionnaire.net> (Consulté le 7
+mars 2018)</Sidenote> peut servir à estimer les besoins financiers et
+matériels d’une cyberœuvre, mais aussi à préparer celle-ci à sa conservation et
+sa présentation dans l’éventualité où elle ne fonctionnera plus <Cite id="depocas_lapproche_2003" />.
+
+### Archivage
+
+L’archivage de la cyberœuvre est un processus complexe. Selon, Peter Lyman <Cite id="lyman_archiving_2002" locator={3} suppressAuthor />, l’archivage fait
+face à quatre défis; le problème culturel, le problème technique, le problème
+économique et le problème légal. Le _problème culturel_ tient de l’imprévisible.
+Comme tout objet, le document numérique possède une vie utile et une fin de vie.
+À ce stade, rien n’indique qu’un document numérique puisse un jour posséder une
+importance historique ou un statut patrimonial. Le _problème technique_ est
+causé par la nature du document numérique, hautement éphémère et dépendant d’un
+environnement informatique tout autant éphémère. Ce problème est donc lié à
+l’obsolescence technologique. Le _problème économique_ est lié aux ressources
+nécessaires à l’archive numérique. Le rendement d’un tel investissement est très
+lent. Le _problème légal_, quant à lui, tient du fait que le contenu sur le Web
+n’est pas toujours libre de droits. Ainsi, les archivistes ne possèdent pas les
+droits nécessaires pour faire une « copie » du Web <Sidenote id="38">
+Lyman ne fait pas la différence entre le contenu libre de droits et le contenu
+protégé par droits d’auteur. Il faut simplement retenir que le Web ne contient
+pas entièrement du contenu libre de droit et que les archivistes doivent
+respecter les différentes licences et droits d’auteur présents sur le Web. </Sidenote>.
+
+Selon Heather Slania, procéder à une mise en archive permettrait de répondre de
+façon provisoire aux problèmes soulevés par Lyman<Sidenote id="39">Les
+changements technologiques rendent les techniques d’archive provisoires, car
+elles ne peuvent prévoir les technologies qui seront employés par les
+artistes.</Sidenote>. Selon elle, les problèmes techniques et légaux sont
+facilement surmontables, car le processus d’archive est considéré comme
+transformatif. Cela permet d’utiliser le principe d’usage loyal (_fair use_).
+Elle voit plutôt des difficultés dans la sélection de l’objet à archiver <Cite id="slania_online_2013" locator={118} />. Par exemple, la fréquence
+d’archivage d’une cyberœuvre dépend de la fréquence à laquelle elle change.
+
+Un autre problème lors de l’archivage est le dynamisme
+variable<Sidenote id="40">Le dynamisme variable est en relation directe avec la
+provenance du contenu de la cyberœuvre. Le contenu peut provenir de sources
+dynamiques ou de source statiques.</Sidenote> de certaines cyberœuvres.
+Celles-ci requièrent parfois, en temps réel, des référentiels de données du
+cyberespace. Elles nécessitent l’appel de données externes à leur site web et
+cela est difficile, voire impossible, à émuler dans un contexte d’archivage. Une
+solution serait de créer une capture des ressources web externes nécessaires au
+fonctionnement de la cyberœuvre <Cite id="rinehart_preserving_2002"/>.
+
+En somme, plusieurs auteurs s’intéressent aux pratiques d’archivages du Web et
+cela permet d’entrevoir des solutions. Les approches de Rinehart (2002) et de
+Slania (2013) impliquent la conservation du contexte de la cyberœuvre, que ce
+soit par la consignation d’informations techniques, par une capture dotée d’un
+« *time stamp »*<Sidenote id="41">Une métadonnée contenant une date et une heure
+précise</Sidenote>, par un collectionnement de la documentation éphémère,
+etc. On ne peut conserver uniquement le code source du langage de programmation
+d’une cyberœuvre, car celui-ci s’est montré inapte, par sa nature évolutive, à
+être permanent et résistant. Cela n’est pas suffisant sur le plan de la
+conservation. Dans certains cas, comme le note Sean Cubitt (2009), une approche
+documentaire ou littéraire est préférable.
+
+### Cybervisiteur
+
+Le cyberespace est un média qui est investi par les musées. L’internaute
+solitaire peut naviguer, voire « déambuler » dans le site web d’un musée. Cette
+métaphore opérationnelle de l’internaute flâneur permet d’illustrer la quête de
+découvertes par la navigation, où il explore le cyberespace sans trop savoir ce
+qu’il y cherche <Cite id="leonard_brouillet_exposition_2012"/>. Ceci se rapproche
+d’un type de visite au musée, où le visiteur se laisse porter par le parcours
+proposé par l’exposition. Malgré l’aspect social du musée, le flâneur serait
+tout de même solitaire, « il est dans la foule, mais n’en fait pas partie : il
+est solitaire dans la multitude » <Cite id="leonard_brouillet_exposition_2012" locator={28}/>. Fischer (2004), quant à lui,
+aborde l’idée d’un itinéraire, d’un chemin suivi par le visiteur. Il s’agirait
+d’une expérience qui est implicitement unique. Personne n’aura la même
+expérience unique — il y a toujours des variables temporelles, géographiques,
+matérielles (hardware) et logicielles qui diffèrent et qui teintent cette
+expérience. En ce sens, Wolfgang Ernst percevait l’archéologie du numérique du
+même œil, avec une importance portée sur la conservation du matériel
+informatique<Sidenote id="42">Le matériel informatique original permet de
+préserver l’effet original de l’expérience de la cyberœuvre.</Sidenote> <Cite id="ernst_media_2011" locator={252} />. En somme, internautes et visiteurs
+font tous deux, dans une certaine mesure, une expérience individuelle de leur
+visite.
+
+### Interface de la cyberœuvre
+
+L’organisation de l’interface orchestre et dirige la lecture de l’information
+qui s’y trouve. L’interface est un champ pictural à composer, où la condition
+matérielle tend à s’effacer pour laisser place à une médiation entre le visible
+et l’invisible<Sidenote id="43">Langlois <Cite id="langlois_interface_2013" suppressAuthor/>, à ce sujet, traite du concept de
+sémiophore, tel que proposé par Pomian <Cite id="pomian_collectionneurs_1987" suppressAuthor/>.</Sidenote> <Cite id="langlois_interface_2013" />. La cyberœuvre est une interface en soi et
+sa mise en espace doit passer par l’élaboration d’une interface particulière,
+celle de la cyberexposition. La cyberexposition ne se limite pas à la mise en
+espace de cyberœuvres.
+
+Dans l’organisation multimodale<Sidenote id="44">L’adjectif est emprunté de Lemke
+(2002), qui l’utilise pour qualifier les différents modes d’organisation de
+l’interface.</Sidenote> des médias, la fonction de _présentation_ permet
+d’identifier et de nommer. La fonction d’_orientation_ induit une prise de
+position du participant (internaute) par rapport au contenu présenté. La
+fonction _organisationnelle_, quant à elle, permet de complexifier et de
+préciser les deux premières fonctions. La perception et l’identification juste
+de ces fonctions déterminent leur utilité. Si les niveaux de présentation,
+d’orientation ou d’organisation sont trop vagues ou ambigus, ils risquent de
+n’apporter aucun sens à la proposition médiatique. L’élaboration de ces niveaux
+de fonction se fait souvent de façon itérative et expérientielle <Cite id="lemke_travels_2002" />.
+
+Comme nous l’avons vu, l’écran permet une expérience individuelle. Elle
+permettrait aussi l’expérience sociale. Il est possible de partager un écran, de
+se regrouper autour de celui-ci pour en faire une expérience commune.
+L’installation d’écrans dans l’exposition au musée est évidemment envisageable
+dans ce contexte <Cite id="keene_digital_2001"/>. Il est aujourd’hui possible de
+dépasser l’enceinte du musée lorsqu’il est question de présenter des expériences
+numériques. C’est surtout le dispositif numérique, par son accessibilité et sa
+mobilité toujours croissante, qui facilite l’usage de l’écran en fonction d’un
+parcours étendu.
+
+Si Keene (2001) traite de l’écran comme d’un élément rassembleur dans l’espace
+d’une exposition physique, Lonergan (2015), quant à elle, met l’emphase sur la
+solitude nécessaire à l’activité de navigation. L’écran et l’_Internet_
+possèderaient donc des caractéristiques qui permettent leur consultation tant en
+mode social qu’en mode solitaire — en contexte d’exposition au musée ou dans le
+cadre d’une cyberexposition. Cela réfère aussi à Lemke (2002), qui note la
+multimodalité de l’interface, dont l’organisation et la présentation de
+l’information demandent à chaque utilisateur de se positionner par rapport
+celle-ci. Le phénomène de perception de l’écran peut être aussi informé par les
+propos de Vial (2015). La cyberœuvre, comprise comme un phénomène numérique
+vécu, possède une ontophanie<Sidenote id="45">Le concept général d’_ontophanie_
+est introduit par Vial tente de décrire la perception des objets à l’ère
+numérique. « Ce dernier, dont l’étymologie convoque la dimension de l’être
+(_ontos_) et de l’apparaître (_phaïnô_), témoigne de notre démarche
+fondamentalement phénoménologique » <Cite id="vial_voir_2016" locator={22}/></Sidenote>
+particulière qui produit plusieurs effets particuliers en fonction du regardeur.
+
+Enfin, pour ce qui est de l’interface et de l’espace d’exposition, les textes de
+Lemke (2002) et de Langlois (2015) permettent d’envisager l’un pour l’autre :
+c’est-à-dire que l’interface peut servir comme espace d’exposition. C’est le cas
+notamment des contextes médiatiques de la cyberexposition <Cite id="langlois_cyberexposition_2015" /> et du catalogue en ligne <Cite id="slania_online_2013" />
+.
+
+## Vers l’analyse de la muséalisation de la cyberœuvre
+
+Cette étude des processus de muséalisation, vis-à-vis des approches telles que
+celle du MMA, vient fournir des éléments partiels de réponse à l’énoncé de
+recherche. Nous pouvons constater que les processus de muséalisation, qu’ils
+soient développés comme modèle en muséologie ou comme guide de conservation de
+l’œuvre médiatique, s’alignent en grandes parties selon les trois étapes que
+sont la sélection, la recherche et la présentation. Ceci vient renseigner
+l’hypothèse initiale de recherche et permet, à cette étape, l’identification
+d’une série d’interrogations. L’objectif est de produire, à terme, une grille
+d’analyse plus globale du processus qu’est la muséalisation. Il est à noter que
+cette étape a également permis de nourrir qualitativement les thématiques
+abordées lors des entretiens menés dans le cadre de ce projet.
+
+<Marginnote id="tableau-interrogations">
+  Tableau : Interrogations découlant de l’étude de la cyberœuvre, en vue de sa
+  muséalisation
+</Marginnote>
+
+<div
+  role="region"
+  aria-labelledby="tableau-interrogations"
+  tabIndex="0"
+  className={styles.tableWrapper}
+>
+  <table className={styles.table}>
+    <thead>
+      <tr>
+        <th>Phase de la muséalisation</th>
+        <th>Interrogations</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Sélection</td>
+        <td>
+          Quelle(s) licence(s) est/sont appropriée(s) à la cyberœuvre?
+          <br />
+          Est-ce au musée ou à l’artiste de déterminer la licence de
+          distribution de la cyberœuvre?
+          <br />
+          Qui sont les artistes et les collaborateurs ayant contribué à la
+          réalisation de la cyberœuvre?
+          <br />
+          Lors de la sélection d’une cyberœuvre, faut-il considérer
+          l’environnement matériel et logiciel?
+          <br />
+          Quels sont les besoins financiers et matériels reliés à l’acquisition
+          de la cyberœuvre?
+        </td>
+      </tr>
+      <tr>
+        <td>Recherche</td>
+        <td>
+          La cyberœuvre dépend-elle de flux de données?
+          <br />
+          La cyberœuvre est-elle en évolution constante?
+          <br />
+          Est-elle vivante?
+          <br />
+          Quelle est l’interface de la cyberœuvre?
+          <br />
+          Comment la documenter?
+          <br />
+          Quels sont les parcours et les itinéraires possibles dans l’interface
+          de la cyberœuvre?
+          <br />
+          Quelles données peuvent être recueillies à propos de la cyberœuvre et
+          de son environnement en vue de sa préservation?
+          <br />
+          Comment est-ce que la cyberœuvre fonctionne?
+          <br />
+          Quelles sont ses fonctions principales (Les fonctions et le
+          fonctionnement ici sont directement en lien avec l’exécution du code
+          source.)?
+          <br />
+          Quels sont les besoins financiers et matériels reliés aux activités de
+          recherches?
+        </td>
+      </tr>
+      <tr>
+        <td>Présentation</td>
+        <td>
+          Quel environnement matériel et logiciel est nécessaire au
+          fonctionnement de la cyberœuvre?
+          <br />
+          La cyberœuvre est-elle participative, interactive?
+          <br />
+          Comment la cyberœuvre peut-elle coexister avec les autres œuvres du
+          musée dans l’espace d’exposition?
+          <br />
+          Quels sont les besoins financiers et matériels reliés à la
+          présentation de la cyberœuvre?
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

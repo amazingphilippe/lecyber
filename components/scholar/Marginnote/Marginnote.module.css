@@ -1,0 +1,21 @@
+.marginnote {
+  float: right;
+  clear: right;
+  vertical-align: baseline;
+  position: relative;
+  text-indent: 0;
+  margin-right: calc(-50% - 0.75rem); /* unit 10 of chakra-ui*/
+  width: 50%;
+}
+
+@media (max-width: 48em) {
+  .marginnote {
+    width: 100%;
+    margin: 0;
+    margin-block-start: 0.5rem;
+    position: static;
+    display: block;
+    padding: 0.5rem 1rem;
+    border-left: 1px solid var(--black);
+  }
+}

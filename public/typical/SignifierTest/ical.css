@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Signifier";
+  font-style: normal;
+  font-weight: normal;
+  src: url("type/signifier-test-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Signifier";
+  font-style: italic;
+  font-weight: normal;
+  src: url("type/signifier-test-regular-italic.woff") format("woff");
+}
+@font-face {
+  font-family: "Signifier";
+  font-style: normal;
+  font-weight: bold;
+  src: url("type/signifier-test-bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Signifier";
+  font-style: italic;
+  font-weight: bold;
+  src: url("type/signifier-test-bold-italic.woff") format("woff");
+}
+@font-face {
+  font-family: "Signifier";
+  font-style: normal;
+  font-weight: 500;
+  src: url("type/signifier-test-medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Signifier";
+  font-style: italic;
+  font-weight: 500;
+  src: url("type/signifier-test-medium-italic.woff") format("woff");
+}

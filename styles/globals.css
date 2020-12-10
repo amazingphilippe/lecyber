@@ -14,3 +14,83 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.jargon-toggler {
+  border: 0px none;
+  clip: rect(0px, 0px, 0px, 0px);
+  height: 1px;
+  width: 1px;
+  margin-bottom: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+}
+.jargon-term {
+  font-style: normal;
+  color: #4d5750;
+  background-image: repeating-linear-gradient(
+    100deg,
+    currentColor,
+    currentColor 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+  background-position: 0 100%;
+}
+
+.jargon-info {
+  padding-inline-start: 0.5rem;
+  background-image: repeating-linear-gradient(
+    10deg,
+    currentColor,
+    currentColor 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  background-repeat: no-repeat;
+  background-size: 2px 100%;
+}
+
+.jargon-term + .jargon-info {
+  display: none;
+}
+.jargon-toggler:checked + .jargon-term {
+  background-color: #96aa9b;
+  color: var(--black);
+}
+.jargon-toggler:checked + .jargon-term + .jargon-info {
+  float: right;
+  clear: right;
+  position: relative;
+  display: inline;
+  text-indent: 0;
+  margin-right: calc(-14ch - 0.75rem); /* unit 10 of chakra-ui*/
+  margin-block-end: 1rem;
+  width: 14ch;
+
+  background-color: var(--white);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.125;
+  font-size: 0.875rem;
+  color: #4d5750;
+}
+
+@media (max-width: 48em) {
+  .jargon-toggler:checked + .jargon-term + .jargon-info {
+    display: block;
+    position: static;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+}
+
+[class*="sidenote"] .jargon-toggler:checked + .jargon-term + .jargon-info {
+  display: block;
+  position: static;
+  width: 100%;
+  margin: 0.5rem 0;
+}

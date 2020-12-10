@@ -1,0 +1,25 @@
+.funkyLink {
+  box-shadow: none;
+  display: flex;
+  color: var(--accent-dark);
+}
+.funkyLink:hover,
+.funkyLink:focus {
+  color: var(--accent-light);
+  background-color: var(--black);
+}
+.funkyLink:hover:after,
+.funkyLink:focus:after {
+  background-image: repeating-radial-gradient(
+    var(--white),
+    var(--white) 2px,
+    var(--black) 2px,
+    var(--black) 3px
+  );
+}
+.funkyLink:after {
+  content: "";
+  flex-grow: 1;
+  margin-left: 2;
+  background-attachment: fixed;
+}
