@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/react";
-import TDM, { miniTDM } from "../../pages/nav/tdm";
+import { TDM, miniTDM } from "../../pages/nav/tdm";
 
 export const Essai = ({ children }) => {
   return (

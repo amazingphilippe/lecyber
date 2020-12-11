@@ -16,7 +16,7 @@ export const Sidenote = (props) => {
           fontSize: "sm",
           fontWeight: "bold",
         }}
-        ariaDescribedBy={`sidenote-${props.id}`}
+        aria-describedby={`sidenote-${props.id}`}
       >
         <chakra.span className={styles.label}>Note: </chakra.span>
       </chakra.label>

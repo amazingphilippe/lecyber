@@ -6,6 +6,11 @@ import Processor from "simple-cite";
 import items from "../../public/references";
 
 import styles from "../../styles/Bib.module.css";
+import { Layout } from "../../components/Layout";
+
+export const meta = {
+  title: "Références",
+};
 
 const References = (props) => {
   const bibliography = [];
@@ -20,14 +25,16 @@ const References = (props) => {
   });
 
   return (
-    <div className={styles.bib}>
-      <chakra.h1>Références</chakra.h1>
-      {bibliography.map((item, key) => (
-        <chakra.p key={key} mt={5} id={item.id} className={styles.bibItem}>
-          {item.bib}
-        </chakra.p>
-      ))}
-    </div>
+    <Layout meta={meta}>
+      <div className={styles.bib}>
+        <chakra.h1>Références</chakra.h1>
+        {bibliography.map((item, key) => (
+          <chakra.p key={key} mt={5} id={item.id} className={styles.bibItem}>
+            {item.bib}
+          </chakra.p>
+        ))}
+      </div>
+    </Layout>
   );
 };
 

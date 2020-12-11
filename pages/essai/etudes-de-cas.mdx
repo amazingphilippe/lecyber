@@ -5,8 +5,17 @@ import { Figure } from "../../components/scholar/Figure";
 import { Box } from "@chakra-ui/react";
 import theme from "../../theme";
 import { Essai } from "../../layouts/Essai";
+import { Layout } from "../../components/Layout";
 
-export default ({ children }) => <Essai>{children}</Essai>;
+export const meta = {
+  title: "Études de cas",
+};
+
+export default ({ children }) => (
+  <Layout meta={meta}>
+    <Essai>{children}</Essai>
+  </Layout>
+);
 
 # Études de cas
 

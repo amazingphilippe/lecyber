@@ -1,8 +1,17 @@
 import { Citation as Cite } from "../../components/scholar/Cite";
 import { Sidenote } from "../../components/scholar/Sidenote";
 import { Essai } from "../../layouts/Essai";
+import { Layout } from "../../components/Layout";
 
-export default ({ children }) => <Essai>{children}</Essai>;
+export const meta = {
+  title: "Introduction",
+};
+
+export default ({ children }) => (
+  <Layout meta={meta}>
+    <Essai>{children}</Essai>
+  </Layout>
+);
 
 # Introduction
 

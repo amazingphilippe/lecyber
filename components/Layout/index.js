@@ -1,25 +1,17 @@
 import { VStack, Grid, GridItem, chakra } from "@chakra-ui/react";
-import Head from "next/head";
-import TDM, { miniTDM } from "../../pages/nav/tdm";
 import { Header } from "../Header";
 import site from "../../site.config";
 
 import React from "react";
-import parse from "remark-parse";
-import remark2react from "remark-react";
-import unified from "unified";
 import { Markdown } from "../Markdown";
 import styles from "./Layout.module.css";
+import SEO from "../seo";
 
-export const Layout = ({ children }) => {
+export const Layout = ({ meta, children }) => {
   return (
     <>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charSet="utf-8" />
-        <meta name="Description" content={site.description || ""}></meta>
-        <title>{site.title || ""}</title>
-      </Head>
+      <SEO meta={meta} description={site.description} title={site.title} />
+
       <VStack direction="column" align="start" px={3} minH="100vh" spacing={40}>
         <Header site={site} nav={site.nav} />
         {children}

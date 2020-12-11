@@ -12,6 +12,7 @@ import { Box, chakra, flexbox } from "@chakra-ui/react";
 import FunkyLink from "../../styles/FunkyLink.module.css";
 
 import { useRouter } from "next/router";
+import { Layout } from "../../components/Layout";
 
 //Settings. This is somewhat manual. Could be broken off of this file if made into a component
 const options = [
@@ -106,7 +107,7 @@ const TDMItem = (props) => {
  * parses content of files obtained from the getStaticProps function below
  * creates a hast by converting a md hast map obtained by the toc plugin
  */
-function TDM(props) {
+export function TDM(props) {
   return (
     <chakra.ol my={0} listStyleType="none" w="100%">
       {props.posts.map((post) => {
@@ -181,4 +182,16 @@ export const miniTDM = [
   { filename: "conclusion.mdx", content: "# Conclusion", counter: false },
 ];
 
-export default TDM;
+export const meta = {
+  title: "Table des matières",
+};
+
+function TDMPage(props) {
+  return (
+    <Layout meta={meta}>
+      <TDM posts={props.posts} />
+    </Layout>
+  );
+}
+
+export default TDMPage;

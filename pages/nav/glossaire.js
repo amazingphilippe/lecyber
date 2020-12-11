@@ -3,12 +3,17 @@ import React from "react";
 import parse from "remark-parse";
 import remark2react from "remark-react";
 import unified from "unified";
+import { Layout } from "../../components/Layout";
 
 import jargon from "../../public/jargon";
 
+export const meta = {
+  title: "Glossaire",
+};
+
 const Glossaire = (props) => {
   return (
-    <div>
+    <Layout meta={meta}>
       <chakra.h1>Glossaire</chakra.h1>
       <chakra.dl maxW="60ch">
         {Object.keys(jargon).map((key, i) => (
@@ -37,7 +42,7 @@ const Glossaire = (props) => {
           </React.Fragment>
         ))}
       </chakra.dl>
-    </div>
+    </Layout>
   );
 };
 

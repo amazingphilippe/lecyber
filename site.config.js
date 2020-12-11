@@ -2,7 +2,8 @@ export default {
   title: "Cyberœuvre & musée",
   email: "yo@philippecaron.ca",
   url: "http://lecyber.art",
-  social_links: {
+  image: "/public/lecyber.jpg",
+  social: {
     twitter: "philippecaron",
     github: "amazingphilippe",
   },

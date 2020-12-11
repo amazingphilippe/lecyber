@@ -4,8 +4,17 @@ import { Marginnote } from "../../components/scholar/Marginnote";
 import { Essai } from "../../layouts/Essai";
 import { chakra } from "@chakra-ui/react";
 import styles from "../../styles/Table.module.css";
+import { Layout } from "../../components/Layout";
 
-export default ({ children }) => <Essai>{children}</Essai>;
+export const meta = {
+  title: "Harmonisation des processus de la muséalisation",
+};
+
+export default ({ children }) => (
+  <Layout meta={meta}>
+    <Essai>{children}</Essai>
+  </Layout>
+);
 
 # Harmonisation des processus de la muséalisation
 
