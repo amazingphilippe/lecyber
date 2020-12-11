@@ -8,6 +8,7 @@ export default function SEO({ meta, description, title }) {
     <Head>
       <title>{`${pageTitle}${siteTitle}`}</title>
       <meta name="description" content={meta?.description || description} />
+      <meta name="abstract" content={config.abstract} />
 
       <meta property="og:title" content={pageTitle} />
       <meta property="og:url" content={config.url} />
