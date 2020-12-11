@@ -52,6 +52,7 @@
   box-shadow: 0 0 0 1px var(--accent-light);
 }
 .tableWrapper[tabindex="0"][aria-labelledby][role="region"] {
+  max-width: 100%;
   font-size: 1.125rem;
   width: 60ch;
   margin: 0;
